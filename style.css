@@ -425,20 +425,34 @@ footer {
     color: #9356DC;
 }
 
-.fa-regular.fa-heart {
-    transition: all 1.5s ease;
-    background: transparent;
+
+.heart-container {
+    position: relative;
+    font-size: 22px;
     cursor: pointer;
+    display: inline-block;
+    line-height: 1;
 }
 
-.fa-regular.fa-heart:hover {
-    color: transparent;
-    font-weight: 900;
+.heart-empty {
+    color: #000;
+}
+
+.heart-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+     right: 0;
     background: linear-gradient(193deg, #9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.heart-container:hover .heart-full {
+    opacity: 1;
 }
 
 .loader {
