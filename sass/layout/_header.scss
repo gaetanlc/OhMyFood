@@ -1,0 +1,49 @@
+header {
+    background-color: white;
+    width: 100%;
+}
+
+.restaurant-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    color: #353535;
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #eaeaea;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.location p {
+    margin: 0;
+    color: #353535;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 100%;
+}

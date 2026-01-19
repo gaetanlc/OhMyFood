@@ -1,0 +1,97 @@
+.restaurant-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.badge-nouveau {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 7px 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.restaurant-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-text h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card-text p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+}
+
+.card-content i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+// Animation coeur
+.heart-container {
+    position: relative;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}
+
+.heart-empty {
+    color: #000;
+}
+
+.heart-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(193deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.heart-container:hover .heart-full {
+    opacity: 1;
+}
+
+// Media queries
+@media (min-width: 1024px) {
+    .restaurant-card img {
+        display: flex;
+        width: 100%;
+        height: 175px;
+        object-position: center 63%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,115 @@
+.reservation-button {
+    display: flex;
+    background: linear-gradient(-193deg, #FF79DA, #9356DC);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.reservation-button:hover {
+    opacity: 0.85;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.fonctionnement-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fonctionnement-step {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-left: 12px;
+    gap: 20px;
+}
+
+.step-number {
+    position: absolute;
+    left: -12px;
+    background-color: #9356DC;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fonctionnement-step i {
+    color: #7e7e7e;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.fonctionnement-step p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.fa-solid.fa-store {
+    color: #9356DC;
+}
+
+// Media queries
+@media (min-width: 1024px) {
+    .fonctionnement {
+        max-width: 1080px;
+        margin: 40px auto;
+        padding: 0 100px;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    .fonctionnement p {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .fonctionnement h2 {
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 19px;
+    }
+
+    .fonctionnement-list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+    }
+
+    .fonctionnement-step {
+        flex: 1;
+        margin-left: 12px;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .fonctionnement-step i {
+        padding-left: 10px;
+    }
+}
